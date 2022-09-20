@@ -41,20 +41,28 @@ namespace Variables
             Console.WriteLine("Score: " + score); // Displays the current score.
             Console.WriteLine("Time: " + time); // Displays the current time.
             Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health); // Displays the current player health.
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Game Start!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
             score = score + enemyPoints; // Player killed an enemy.
             time = 12.44f; // Timer that starts as soon as the game begins.
-            Console.WriteLine("Score: " + score);
-            Console.WriteLine("Time: " + time);
+            Console.WriteLine("Score: " + score); // tells you the score
+            Console.WriteLine("Time: " + time); // tells you the time
             Console.WriteLine();
+            Console.WriteLine(" ^ ");  // Player Model
             Console.WriteLine();
-            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Health: " + health); // tells you your health + lives
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -64,9 +72,14 @@ namespace Variables
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine("(Watch out, they fight back! Hull Damaged!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -75,12 +88,18 @@ namespace Variables
             health = health - enemyDamage;
             time = 45.66f;
             Console.WriteLine("Score: " + score);
-            Console.WriteLine("Double Kill!");
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine("Double Kill!");
+            Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine("(Missiles! Watch out! Hull Damaged!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -89,12 +108,18 @@ namespace Variables
             health = health + healthUp; // Player got an extra health point.
             time = 60.63f;
             Console.WriteLine("Score: " + score);
-            Console.WriteLine("Double Kill!");
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine("Double Kill!");
+            Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine("(Shields are recharging! Hull Repair Drones Deployed!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -106,9 +131,14 @@ namespace Variables
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine("(Watch out, they're breaching the shields! Hull Damaged!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -117,9 +147,13 @@ namespace Variables
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
@@ -129,9 +163,14 @@ namespace Variables
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Time: " + time);
             Console.WriteLine();
+            Console.WriteLine(" ^ ");
             Console.WriteLine();
             Console.WriteLine("Health: " + health);
             Console.WriteLine(" - - - - - - ");
+            Console.WriteLine("(Enemy Slain!)");
+            Console.WriteLine("(Hull compromised! Engines are shot! We're going down!)");
+            Console.WriteLine(" - - - - - - ");
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
