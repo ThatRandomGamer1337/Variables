@@ -10,42 +10,105 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("A Totally Original Game and not a poorly coded Space Invaders clone!");
             Console.WriteLine();
 
-            // integers -- Whole Numbers. Nothing Else.
-            int score; // declaration -- declare "score" as an integer
-            score = 0; // initialization -- starting "score" off at 0
+            int score; // declaration -- declaring score as an integer.
+            score = 0; // initialization -- starting score off at 0.
+
             int health;
-            health = 3;
+            health = 3; // starting health.
+
+            int healthUp;
+            healthUp = 1; // player gained an extra pip of health
+
             int enemyPoints;
-            enemyPoints = 50; // 100 points per enemy killed
-            Console.WriteLine("Score: " + score); // display score
+            enemyPoints = 50; // 50 points per enemy killed.
+
+            int enemyDamage;
+            enemyDamage = 1; // enemies deal 1 health point of damage.
+
+            int doubleKill;
+            doubleKill = 25; // gives bonus points for getting 2 kills in under a few seconds
+
+            float time;
+            time = 0.0f; // In game timer, survive as long as you can.
+
+            string gameOver; // Game Over text.
+
+            // ------------------------------------
+
+            Console.WriteLine("Score: " + score); // Displays the current score.
+            Console.WriteLine("Health: " + health); // Displays the current player health.
+            Console.WriteLine("Time: " + time); // Displays the current time.
+            Console.WriteLine();
+
+            score = score + enemyPoints; // Player killed an enemy.
+            time = 12.44f; // Timer that starts as soon as the game begins.
+            Console.WriteLine("Score: " + score);
             Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
             Console.WriteLine();
 
             score = score + enemyPoints;
+            health = health - enemyDamage; // Player took damage from an enemy.
+            time = 23.87f;
             Console.WriteLine("Score: " + score);
             Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
             Console.WriteLine();
 
-            // floating points -- integer but can take decimals up to the 7th decimal place
-            float lapTime;
-            lapTime = 0.0f;
-            Console.WriteLine("Lap Time: " + lapTime);
-            lapTime = 33.294f;
-            Console.WriteLine("Lap Time: " + lapTime);
+            score = score + enemyPoints;
+            score = score + enemyPoints + doubleKill; // Player got a double kill and got bonus points.
+            health = health - enemyDamage;
+            time = 45.66f;
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
             Console.WriteLine();
 
-            // string -- text
-            string name;
-            name = "Serena";
-            Console.WriteLine("Name: " + name);
-            name = "Serena Burnett";
-            Console.WriteLine("Name: " + name);
+            score = score + enemyPoints;
+            score = score + enemyPoints + doubleKill; 
+            health = health + healthUp; // Player got an extra health point.
+            time = 60.63f;
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
             Console.WriteLine();
 
-            Console.ReadKey(true);
+            // from here its more or less a loop of the previous steps until you get to the Game Over section.
+
+            score = score + enemyPoints;
+            health = health - enemyDamage;
+            time = 72.44f;
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
+            Console.WriteLine();
+
+            score = score + enemyPoints;
+            time = 82.66f;
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
+            Console.WriteLine();
+
+            score = score + enemyPoints;
+            health = health - enemyDamage;
+            time = 89.21f;
+            Console.WriteLine("Score: " + score);
+            Console.WriteLine("Health: " + health);
+            Console.WriteLine("Time: " + time);
+            Console.WriteLine();
+
+            // ------------------------------------
+
+            gameOver = "{> Game Over! <}"; // Game ends, with small animation of player exploding.
+            Console.WriteLine(gameOver);
+            gameOver = "Restart?";
+            Console.WriteLine("* " + gameOver); // Game gives option to begin again or quit. But because this is merely visual studio, you can only quit lol.
+
+            Console.ReadKey(true); // waits for an input to end the program.
 
         }
     }
